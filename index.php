@@ -8,13 +8,10 @@ $heading->setTag('h1');
 $heading->changeSize(32);
 
 $heading->output();
-//echo $heading   - magiškai atspausdina, panaudoja funkciją __toString. geriau nenaudoti!
 
 $heading2 = new StyledText("Naujienos");
 $heading2->setTag('h2');
 $heading2->output();
-//echo $heading2   - magiškai atspausdina, panaudoja funkciją __toString. geriau nenaudoti!
-//__destruct nėra naudojama. ir šiaip magiškos __ funkcijos nėra naudojamos.
 
 $subHeading = new StyledText('This is a subheading');
 $subHeading->changeColor('steelblue');

@@ -25,7 +25,7 @@ class StyledText
     public function __construct(string $text = 'My paragraph')
     {
         $this->text = $text;
-    } //konstruktorius yra funkcija. ji kviečiama kiekvieną kartą kai sukuriamas objektas.
+    }
 
     public function __toString(): string
     {
@@ -42,13 +42,13 @@ class StyledText
         if ($color == 'white') {
             return;
         }
-        $this->color = $color; //objektiniame programavime yra įprasta keisti spalvą štai tokių funkcijyčių pagalba.
+        $this->color = $color;
     }
     public function changeSize(string $size): void
     {
         if ($size > 32 || $size < 8) {
             return;
         }
-        $this->size = $size; //objektiniame programavime yra įprasta keisti spalvą štai tokių funkcijyčių pagalba.
+        $this->size = $size;
     }
 }
