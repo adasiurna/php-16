@@ -13,7 +13,7 @@ class StyledImage
 
     public function outputImg(): void
     {
-        echo '<img src="'.$this->url.'" height="'.$this->height.'" width="'.$this->width.'" style=" object-fit: cover">';
+        echo '<img alt="image" src="'.$this->url.'" height="'.$this->height.'" width="'.$this->width.'" style=" object-fit: cover">';
     }
 
     public function changeWidth(int $width): void
